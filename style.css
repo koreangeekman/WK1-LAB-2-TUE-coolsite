@@ -1,6 +1,6 @@
 :root {
   --bgdark: #061130;
-  --color-light: #f4f6f8;
+  --color-light: #eef3f3;
   --color-link: #1c4bc4;
   --color-title: #fafd61;
 
@@ -11,7 +11,9 @@
 
 body {
   margin: 0;
-  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,7 +22,7 @@ header {
   height: 80px;
   padding: 16px 24px;
   color: var(--color-light);
-  font-size: 1.5em;
+  font-size: 1.2em;
   display: flex;
   justify-content: space-between;
 }
@@ -37,30 +39,39 @@ main {
   background-color: var(--bgdark);
   color: var(--color-light);
   width: 100%;
+  padding: 10vh 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.textarea {
-  max-width: 30%;
+p {
+  margin: .5em 0;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+img {
+  height: fit-content;
 }
 
 sub {
-  height: 10vh;
+  height: 12vh;
   background-color: white;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 footer {
-  height: 160px;
-  background-color: whitesmoke;
+  height: 16vh;
+  background-color: var(--color-light);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 a {
@@ -76,12 +87,17 @@ a {
   border-radius: 10px;
 }
 
+.textarea {
+  max-width: 350px;
+}
+
 .title {
   color: var(--color-title);
 }
 
-.slogan {
-  background-color: whitesmoke;
+.big {
+  font-size: 2.2em;
+  font-weight: 600;
 }
 
 /* ID SELECTORS */
